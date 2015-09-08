@@ -12,19 +12,13 @@ namespace conferance_calender_server.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult Welcome(string name, int numTimes = 1)
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Hello " + name;
+            ViewBag.NumTimes = numTimes;
 
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
